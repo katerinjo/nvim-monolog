@@ -17,8 +17,8 @@ outtext=$(cat $fauxpipe)
 
 oldclipboard=$(xsel -b -o)
 
-echo -n $outtext | xsel -p -i
-echo -n $outtext | xsel -b -i
+printf '%s\n' $outtext | xsel -p -i
+printf '%s\n' $outtext | xsel -b -i
 
 sleep 0.3
 
