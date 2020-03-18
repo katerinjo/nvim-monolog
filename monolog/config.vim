@@ -11,4 +11,4 @@ cnoreabbrev q wq
 nnoremap <leader>s :wq<CR>
 noremap <C-s> <Esc>:wq<CR>
 inoremap <C-s> <Esc>:wq<CR>
-
+noremap <localleader>r :%!~/.config/nvim/utils/rotate.py<CR>:wq<CR>
