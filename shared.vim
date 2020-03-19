@@ -78,7 +78,7 @@ vnoremap y "+y
 vnoremap p "+p
 vnoremap d "+d
 
-"" Insertion Modes
+"" Insertion Modes (i | C-i)
 
 " helper commands
 command -nargs=1 InsLang set keymap=<args> | set guicursor=a:blinkwait200-blinkon50-blinkoff50
@@ -128,10 +128,15 @@ noremap <C-i>n :InsLang Super<CR>
 inoremap <C-i>p <Esc>:InsLang Super<CR>a
 nnoremap <Leader>Isup :InsLang Super<CR>:echo "Super (i)"<CR>
 
+"" Transformations (t)
+
+" Rotated (r)
+vnoremap tr !~/.config/nvim/utils/rotate.py<CR>
+noremap <Leader>tr !!~/.config/nvim/utils/rotate.py<CR>
 
 "" ^^^ Key Bindings ^^^
 "" *****************************************************************************
 "" vvv Debugging vvv
 
 
-nnoremap <leader>? :echo 'Loaded'<CR>
+nnoremap <Leader>? :echo 'Loaded'<CR>

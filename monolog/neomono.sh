@@ -13,12 +13,12 @@ do
 	sleep 0.2
 done
 
-outtext=$(cat $fauxpipe)
+outtext="$(cat $fauxpipe)"
 
 oldclipboard=$(xsel -b -o)
 
-printf '%s\n' $outtext | xsel -p -i
-printf '%s\n' $outtext | xsel -b -i
+printf '%s' "$outtext" | xsel -p -i
+printf '%s' "$outtext" | xsel -b -i
 
 sleep 0.3
 
