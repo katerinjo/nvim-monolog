@@ -121,6 +121,7 @@ noremap <C-i>n :InsLang SmallCaps<CR>
 inoremap <C-i>s <Esc>:InsLang SmallCaps<CR>a
 nnoremap <Leader>Icap :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
 nnoremap <Leader>Isma :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
+nnoremap <Leader>Iupp :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
 
 " Super (p : sup)
 nnoremap <Leader>ip :InsLang Super<CR>
