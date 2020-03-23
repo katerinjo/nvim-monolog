@@ -61,7 +61,7 @@ I want easy automatic Spongebob case, void text, and upside-down text. I want to
 
 Assuming the text will go where I want it to, each of these features is pretty darn easy to implement in Python. The real bottleneck is compatibility between different applications and tools.
 
-After a lot of experimentation, it turns out that simply using the system clipboard works pretty well! You get compatibility with just about any textbox on any web site or app you want to use with a simple bash script. All you need is a configurable text editor to point it at.
+After a lot of experimentation, it turns out that simply using the system clipboard works pretty well! You get compatibility with just about any textbox on any web site or app you want to use with some relatively simple bash scripting. All you need is a configurable text editor to point it at.
 
 Neovim is my current choice because it:
 
@@ -80,5 +80,4 @@ The original idea was a standalone application, not a configuration, but this is
 - void text
 - fancy text
 - Spongebob case
-- Switch to proper FIFO connection.
 
