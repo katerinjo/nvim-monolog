@@ -11,9 +11,8 @@ function MonologOut()
   quit!
 endfunction
 
-cnoreabbrev w wq
-cnoreabbrev q wq
-nnoremap <leader>s :wq<CR>
+nnoremap <leader>s :call MonologOut()<CR>
 noremap <C-s> <Esc>:call MonologOut()<CR>
 inoremap <C-s> <Esc>:call MonologOut()<CR>
-noremap <localleader>r :%!~/.config/nvim/utils/rotate.py<CR>:wq<CR>
+noremap <localleader>r :%!~/.config/nvim/utils/rotate.py<CR>
+\ :call MonologOut()<CR>
