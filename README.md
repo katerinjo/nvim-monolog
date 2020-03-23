@@ -1,6 +1,6 @@
-# Monolog: A Neovim config for fancy text insertion anywhere
+# Monolog: A Neovim config for smart Unicode text insertion anywhere
 
-This setup adapts the main idea behind [Texpander](https://github.com/leehblue/texpander) to Neovim, allowing the insertion of special characters and use of Vim shortcuts basically anywhere. Feel free to copy as much or as little of the code and philosophy as you please for your own configuration.
+This setup adapts the main idea behind [Texpander](https://github.com/leehblue/texpander) for Neovim, allowing the insertion of special characters and use of Vim shortcuts basically anywhere. Feel free to copy as much or as little of the code and philosophy as you please for your own configuration.
 
 # Setup
 
@@ -18,7 +18,7 @@ When you find yourself wanting to insert something fancy or complicated, just us
 
 # Key Mappings
 
-NORMAL MODE
+## Normal Mode
 
 - `<Space>` (Leader)
   - `s` : save
@@ -27,15 +27,15 @@ NORMAL MODE
   - `t` : TRANSFORM (current line)
 - `\` : TRANSFORM (all and save) (monolog only)
 
-VISUAL MODE
+## Visual Mode
 
 - `t` : TRANSFORM (current selection)
 
-INSERT MODE
+## Insert Mode
 
 - `<Ctrl-i>` : SWITCH INPUT
 
-SWITCH INPUT
+## SWITCH INPUT
 
 | Keymap                          | Key | Verbose Alternative |
 |---------------------------------|-----|---------------------|
@@ -47,13 +47,13 @@ SWITCH INPUT
 | (pseudo-) small caps            | `s` | `cap`, `sma`, `upp` |
 | (pseudo-) superscript           | `p` | `sup`               |
 
-TRANSFORM
+## TRANSFORM
 
 - `r` : rotate upside-down
 
 # Background
 
-Simple and robust keyboard middleware has always been something I've wanted, but all available options I know of fail in one way or another.
+Simple and robust keyboard middleware has always been something I've wanted, but all available options I know of fall short in one way or another.
 
 Trying to combine keyboard configurations, input methods, emoji insertion GUIs, text editors, and so on all together as a coherent whole results in tools stepping on each other's toes, brittle functionality, and a user experience with a lot of mental overhead. Not good.
 
