@@ -4,7 +4,8 @@ fauxpipe=/tmp/monologpipe
 
 trap "rm -f $fauxpipe" EXIT
 
-terminator -e "nvim $fauxpipe -u ~/.config/nvim/monolog/config.vim -c startinsert"
+terminator --title 'MONOLOG' \
+  -e "nvim $fauxpipe -u ~/.config/nvim/monolog/config.vim -c startinsert"
 
 sleep 1
 
