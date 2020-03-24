@@ -78,6 +78,10 @@ vnoremap y "+y
 vnoremap p "+p
 vnoremap d "+d
 
+"" Quick Commands
+
+nnoremap <Leader>u :.w !uniname<CR>
+
 "" Insertion Modes (i | C-i)
 
 " helper commands
