@@ -78,6 +78,10 @@ vnoremap y "+y
 vnoremap p "+p
 vnoremap d "+d
 
+"" Characters
+
+inoremap <S-Tab> <C-k>HT
+
 "" Quick Commands
 
 nnoremap <Leader>u :.w !uniname<CR>
