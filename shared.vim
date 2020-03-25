@@ -81,6 +81,10 @@ vnoremap d "+d
 "" Characters
 
 inoremap <S-Tab> <C-k>HT
+digraphs !? 8253
+digraphs ~~ 8776
+digraphs ?! 11800
+digraphs Tg 9895
 
 "" Quick Commands
 
