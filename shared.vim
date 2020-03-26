@@ -149,7 +149,18 @@ noremap <Leader>tr !!~/.config/nvim/utils/rotate.py<CR>
 
 "" ^^^ Key Bindings ^^^
 "" *****************************************************************************
-"" vvv Debugging vvv
+"" vvv Plugin Config vvv
 
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
+" ultisnips
+let g:UltiSnipsExpandTrigger="<C-y>"
+let g:UltiSnipsJumpForwardTrigger="<C-n>"
+let g:UltiSnipsJumpBackwardTrigger="<C-p>"
+
+"" ^^^ Plugin Config ^^^
+"" *****************************************************************************
+"" vvv Debugging vvv
 
 nnoremap <Leader>? :echo 'Loaded'<CR>

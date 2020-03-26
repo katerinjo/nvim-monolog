@@ -14,15 +14,26 @@ set number
 call plug#begin(expand('~/.config/nvim/plugged'))
 
 "" General
+
+"" Presentation
+
 Plug 'vim-airline/vim-airline'
+
+" color schemes
+Plug 'nanotech/jellybeans.vim'
+
+"" Function
+
 Plug 'w0rp/ale' " linting engine
 Plug 'tpope/vim-commentary' " gcc for commenting out lines
 
-"" Color Schemes
-Plug 'nanotech/jellybeans.vim'
+" snippets
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'sirver/UltiSnips'
 
 "" Clojure
-Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile'}
+Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile' }
 
 call plug#end()
 
