@@ -25,4 +25,4 @@ UX	<char-0x016C>	" UPPERCASE U WITH BREVE
 Ux	<char-0x016C>
 W	<char-0x016C>
 ux	<char-0x016D>	" LOWERCASE u WITH BREVE
-w	<char-0x016C>
+w	<char-0x016D>
