@@ -148,6 +148,9 @@ noremap <Leader>ta !!LC_ALL=C sort<CR>
 vnoremap tA !sort<CR>
 noremap <Leader>tA !!sort<CR>
 
+" Studly Caps (S)
+vnoremap tS !~/.config/nvim/utils/studly.py<CR>
+noremap <Leader>tS !!~/.config/nvim/utils/studly.py<CR>
 
 "" ^^^ Key Bindings ^^^
 "" *****************************************************************************
