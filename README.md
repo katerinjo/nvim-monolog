@@ -49,6 +49,8 @@ When you find yourself wanting to insert something fancy or complicated, just us
 
 ## TRANSFORM
 
+- `a` : sort (simple)
+- `A` : sort (smart)
 - `r` : rotate upside-down
 
 # Background

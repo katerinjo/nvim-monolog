@@ -147,6 +147,15 @@ nnoremap <Leader>Isup :InsLang Super<CR>:echo "Super (i)"<CR>
 vnoremap tr !~/.config/nvim/utils/rotate.py<CR>
 noremap <Leader>tr !!~/.config/nvim/utils/rotate.py<CR>
 
+" Brute Sorted (a)
+vnoremap ta !LC_ALL=C sort<CR>
+noremap <Leader>ta !!LC_ALL=C sort<CR>
+
+" Smart Sorted (A)
+vnoremap ta !sort<CR>
+noremap <Leader>ta !!sort<CR>
+
+
 "" ^^^ Key Bindings ^^^
 "" *****************************************************************************
 "" vvv Plugin Config vvv
