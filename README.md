@@ -31,10 +31,6 @@ When you find yourself wanting to insert something fancy or complicated, just us
 
 - `t` : TRANSFORM (current selection)
 
-## Insert Mode
-
-- `<Ctrl-i>` : SWITCH INPUT
-
 ## SWITCH INPUT
 
 | Keymap                          | Key | Verbose Alternative |
