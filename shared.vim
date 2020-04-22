@@ -145,8 +145,8 @@ vnoremap ta !LC_ALL=C sort<CR>
 noremap <Leader>ta !!LC_ALL=C sort<CR>
 
 " Smart Sorted (A)
-vnoremap ta !sort<CR>
-noremap <Leader>ta !!sort<CR>
+vnoremap tA !sort<CR>
+noremap <Leader>tA !!sort<CR>
 
 
 "" ^^^ Key Bindings ^^^
