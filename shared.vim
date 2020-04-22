@@ -161,12 +161,12 @@ noremap <Leader>ta !!sort<CR>
 "" vvv Plugin Config vvv
 
 " deoplete
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 
 " ultisnips
-let g:UltiSnipsExpandTrigger="<C-y>"
-let g:UltiSnipsJumpForwardTrigger="<C-n>"
-let g:UltiSnipsJumpBackwardTrigger="<C-p>"
+" let g:UltiSnipsExpandTrigger="<C-y>"
+" let g:UltiSnipsJumpForwardTrigger="<C-n>"
+" let g:UltiSnipsJumpBackwardTrigger="<C-p>"
 
 "" ^^^ Plugin Config ^^^
 "" *****************************************************************************

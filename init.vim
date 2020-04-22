@@ -29,8 +29,8 @@ Plug 'tpope/vim-commentary' " gcc for commenting out lines
 
 " snippets
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'sirver/UltiSnips'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'sirver/UltiSnips'
 
 "" Clojure
 Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile' }
