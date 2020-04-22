@@ -77,5 +77,4 @@ The original idea was a standalone application, not a configuration, but this is
 - emoticons and emojis
 - void text
 - fancy text
-- studly caps
 
