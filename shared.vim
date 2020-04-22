@@ -100,37 +100,31 @@ command -nargs=0 Langs echo "Esperanto\nIPA\nKana\nPinyin\nSmallCaps\nSuper"
 " Normal (n : nor)
 nnoremap <Leader>in :NoInsLang<CR>
 noremap <C-i>n :NoInsLang<CR>
-inoremap <C-i>n <Esc>:NoInsLang<CR>a
 nnoremap <Leader>Inor :NoInsLang<CR>:echo "Normal (n)"<CR>
 
 " Esperanto (e : esp)
 nnoremap <Leader>ie :InsLang Esperanto<CR>
 noremap <C-i>n :InsLang Esperanto<CR>
-inoremap <C-i>e <Esc>:InsLang Esperanto<CR>a
 nnoremap <Leader>Iesp :InsLang Esperanto <CR>:echo "Esperanto (e)"<CR>
 
 " IPA (i : ipa)
 nnoremap <Leader>ii :InsLang IPA<CR>
 noremap <C-i>n :InsLang IPA<CR>
-inoremap <C-i>i <Esc>:InsLang IPA<CR>a
 nnoremap <Leader>Iipa :InsLang IPA<CR>:echo "IPA (i)"<CR>
 
 " Kana (k : kan)
 nnoremap <Leader>ik :InsLang kana<CR>
 noremap <C-i>n :InsLang kana<CR>
-inoremap <C-i>k <Esc>:InsLang kana<CR>a
 nnoremap <Leader>Ikan :InsLang kana<CR>:echo "Kana (k)"<CR>
 
 " Pinyin (y : pin)
 nnoremap <Leader>iy :InsLang Pinyin<CR>
 noremap <C-i>n :InsLang Pinyin<CR>
-inoremap <C-i>y <Esc>:InsLang Pinyin<CR>a
 nnoremap <Leader>Ipin :InsLang Pinyin<CR>:echo "Pinyin (y)"<CR>
 
 " SmallCaps (s : cap sma)
 nnoremap <Leader>is :InsLang SmallCaps<CR>
 noremap <C-i>n :InsLang SmallCaps<CR>
-inoremap <C-i>s <Esc>:InsLang SmallCaps<CR>a
 nnoremap <Leader>Icap :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
 nnoremap <Leader>Isma :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
 nnoremap <Leader>Iupp :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
@@ -138,7 +132,6 @@ nnoremap <Leader>Iupp :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
 " Super (p : sup)
 nnoremap <Leader>ip :InsLang Super<CR>
 noremap <C-i>n :InsLang Super<CR>
-inoremap <C-i>p <Esc>:InsLang Super<CR>a
 nnoremap <Leader>Isup :InsLang Super<CR>:echo "Super (i)"<CR>
 
 "" Transformations (t)
