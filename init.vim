@@ -112,8 +112,6 @@ nnoremap <Leader>u :.w !uniname<CR>
 command! FixWhitespace :%s/\s\+$//e
 
 " keymap helper commands
-command -nargs=1 InsLang set keymap=<args> | set guicursor=a:blinkwait200-blinkon50-blinkoff50
-command -nargs=0 NoInsLang set keymap= | set guicursor=a:blinkon0
 command -nargs=0 Langs echo "Esperanto\nIPA\nKana\nPinyin\nSmallCaps\nSuper"
 
 "" ^^^ Commands / Functions ^^^
@@ -192,41 +190,34 @@ noremap <C-l> <C-w>l
 "" vvv Keymaps vvv
 
 " Normal (n : nor)
-nnoremap <Leader>in :NoInsLang<CR>
-noremap <C-i>n :NoInsLang<CR>
-nnoremap <Leader>Inor :NoInsLang<CR>:echo "Normal (n)"<CR>
+nnoremap <Leader>in :set keymap=<CR>
+nnoremap <Leader>Inor :set keymap=<CR>:echo "Normal (n)"<CR>
 
 " Esperanto (e : esp)
-nnoremap <Leader>ie :InsLang Esperanto<CR>
-noremap <C-i>n :InsLang Esperanto<CR>
-nnoremap <Leader>Iesp :InsLang Esperanto <CR>:echo "Esperanto (e)"<CR>
+nnoremap <Leader>ie :set keymap=Esperanto<CR>
+nnoremap <Leader>Iesp :set keymap=Esperanto <CR>:echo "Esperanto (e)"<CR>
 
 " IPA (i : ipa)
-nnoremap <Leader>ii :InsLang IPA<CR>
-noremap <C-i>n :InsLang IPA<CR>
-nnoremap <Leader>Iipa :InsLang IPA<CR>:echo "IPA (i)"<CR>
+nnoremap <Leader>ii :set keymap=IPA<CR>
+nnoremap <Leader>Iipa :set keymap=IPA<CR>:echo "IPA (i)"<CR>
 
 " Kana (k : kan)
-nnoremap <Leader>ik :InsLang kana<CR>
-noremap <C-i>n :InsLang kana<CR>
-nnoremap <Leader>Ikan :InsLang kana<CR>:echo "Kana (k)"<CR>
+nnoremap <Leader>ik :set keymap=kana<CR>
+nnoremap <Leader>Ikan :set keymap=kana<CR>:echo "Kana (k)"<CR>
 
 " Pinyin (y : pin)
-nnoremap <Leader>iy :InsLang Pinyin<CR>
-noremap <C-i>n :InsLang Pinyin<CR>
-nnoremap <Leader>Ipin :InsLang Pinyin<CR>:echo "Pinyin (y)"<CR>
+nnoremap <Leader>iy :set keymap=Pinyin<CR>
+nnoremap <Leader>Ipin :set keymap=Pinyin<CR>:echo "Pinyin (y)"<CR>
 
 " SmallCaps (s : cap sma)
-nnoremap <Leader>is :InsLang SmallCaps<CR>
-noremap <C-i>n :InsLang SmallCaps<CR>
-nnoremap <Leader>Icap :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
-nnoremap <Leader>Isma :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
-nnoremap <Leader>Iupp :InsLang SmallCaps<CR>:echo "SmallCaps (s)"<CR>
+nnoremap <Leader>is :set keymap=SmallCaps<CR>
+nnoremap <Leader>Icap :set keymap=SmallCaps<CR>:echo "SmallCaps (s)"<CR>
+nnoremap <Leader>Isma :set keymap=SmallCaps<CR>:echo "SmallCaps (s)"<CR>
+nnoremap <Leader>Iupp :set keymap=SmallCaps<CR>:echo "SmallCaps (s)"<CR>
 
 " Super (p : sup)
-nnoremap <Leader>ip :InsLang Super<CR>
-noremap <C-i>n :InsLang Super<CR>
-nnoremap <Leader>Isup :InsLang Super<CR>:echo "Super (i)"<CR>
+nnoremap <Leader>ip :set keymap=Super<CR>
+nnoremap <Leader>Isup :set keymap=Super<CR>:echo "Super (i)"<CR>
 
 "" ^^^ Keymaps ^^^
 "" *****************************************************************************
