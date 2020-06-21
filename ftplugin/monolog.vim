@@ -15,6 +15,10 @@ inoremap <C-s> <Esc>:call MonologOut()<CR>
 noremap <localleader>r :%!~/.config/nvim/utils/rotate.py<CR>
   \ :call MonologOut()<CR>
 
+" Italic
+noremap <localleader>I :%!~/.config/nvim/utils/italic.py<CR>
+  \ :call MonologOut()<CR>
+
 " Brute Sorted
 noremap <localleader>a :%!LC_ALL=C sort<CR>
   \ :call MonologOut()<CR>
