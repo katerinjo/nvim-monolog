@@ -201,6 +201,9 @@ nnoremap <Leader>Iesp :set keymap=Esperanto <CR>:echo "Esperanto (e)"<CR>
 nnoremap <Leader>ii :set keymap=IPA<CR>
 nnoremap <Leader>Iipa :set keymap=IPA<CR>:echo "IPA (i)"<CR>
 
+" Italic (I)
+nnoremap <Leader>iI :set keymap=Italic<CR>
+
 " Kana (k : kan)
 nnoremap <Leader>ik :set keymap=kana<CR>
 nnoremap <Leader>Ikan :set keymap=kana<CR>:echo "Kana (k)"<CR>
@@ -230,6 +233,10 @@ noremap <Leader>tr !!~/.config/nvim/utils/rotate.py<CR>
 " Brute Sorted (a)
 vnoremap ta !LC_ALL=C sort<CR>
 noremap <Leader>ta !!LC_ALL=C sort<CR>
+
+" Italic (I)
+vnoremap tI !~/.config/nvim/utils/italic.py<CR>
+noremap <Leader>tI !!~/.config/nvim/utils/italic.py<CR>
 
 " Smart Sorted (A)
 vnoremap tA !sort<CR>
