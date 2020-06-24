@@ -38,6 +38,7 @@ When you find yourself wanting to insert something fancy or complicated, just us
 | normal/default                  | `n` | `nor`               |
 | Esperanto                       | `e` | `esp`               |
 | International Phonetic Alphabet | `i` | `ipa`               |
+| Italic                          | `I` |                     |
 | Kana (Japanese)                 | `k` | `kan`               |
 | Pinyin (Mandarin)               | `y` | `pin`               |
 | (pseudo-) small caps            | `s` | `cap`, `sma`, `upp` |
@@ -47,7 +48,10 @@ When you find yourself wanting to insert something fancy or complicated, just us
 
 - `a` : sort (simple)
 - `A` : sort (smart)
+- `I` : italics
 - `r` : rotate upside-down
+- `S` : studly caps
+- `s` : small caps
 
 # Background
 

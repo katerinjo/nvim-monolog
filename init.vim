@@ -245,3 +245,7 @@ noremap <Leader>tA !!sort<CR>
 " Studly Caps (S)
 vnoremap tS !~/.config/nvim/utils/studly.py<CR>
 noremap <Leader>tS !!~/.config/nvim/utils/studly.py<CR>
+
+" SmallCaps (s)
+vnoremap ts !~/.config/nvim/utils/smallcaps.py<CR>
+noremap <Leader>ts !!~/.config/nvim/utils/smallcaps.py<CR>
