@@ -30,3 +30,7 @@ noremap <localleader>A :%!sort<CR>
 " Studly Caps
 noremap <localleader>S :%!~/.config/nvim/utils/studly.py<CR>
   \ :call MonologOut()<CR>
+
+" Small Caps
+noremap <localleader>s :%!~/.config/nvim/utils/smallcaps.py<CR>
+  \ :call MonologOut()<CR>
