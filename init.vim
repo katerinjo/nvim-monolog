@@ -249,3 +249,7 @@ noremap <Leader>tS !!~/.config/nvim/utils/studly.py<CR>
 " SmallCaps (s)
 vnoremap ts !~/.config/nvim/utils/smallcaps.py<CR>
 noremap <Leader>ts !!~/.config/nvim/utils/smallcaps.py<CR>
+
+" Underlined (u)
+vnoremap tu !~/.config/nvim/utils/under.py<CR>
+noremap <Leader>tu !!~/.config/nvim/utils/under.py<CR>

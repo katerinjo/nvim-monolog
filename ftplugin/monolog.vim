@@ -11,20 +11,20 @@ nnoremap <leader>s :call MonologOut()<CR>
 noremap <C-s> <Esc>:call MonologOut()<CR>
 inoremap <C-s> <Esc>:call MonologOut()<CR>
 
-" Rotated
-noremap <localleader>r :%!~/.config/nvim/utils/rotate.py<CR>
-  \ :call MonologOut()<CR>
-
-" Italic
-noremap <localleader>I :%!~/.config/nvim/utils/italic.py<CR>
+" Smart Sorted
+noremap <localleader>A :%!sort<CR>
   \ :call MonologOut()<CR>
 
 " Brute Sorted
 noremap <localleader>a :%!LC_ALL=C sort<CR>
   \ :call MonologOut()<CR>
 
-" Smart Sorted
-noremap <localleader>A :%!sort<CR>
+" Italic
+noremap <localleader>I :%!~/.config/nvim/utils/italic.py<CR>
+  \ :call MonologOut()<CR>
+
+" Rotated
+noremap <localleader>r :%!~/.config/nvim/utils/rotate.py<CR>
   \ :call MonologOut()<CR>
 
 " Studly Caps
@@ -33,4 +33,8 @@ noremap <localleader>S :%!~/.config/nvim/utils/studly.py<CR>
 
 " Small Caps
 noremap <localleader>s :%!~/.config/nvim/utils/smallcaps.py<CR>
+  \ :call MonologOut()<CR>
+
+" Underlined
+noremap <localleader>u :%!~/.config/nvim/utils/under.py<CR>
   \ :call MonologOut()<CR>
