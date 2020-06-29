@@ -226,9 +226,9 @@ nnoremap <Leader>Isup :set keymap=Super<CR>:echo "Super (i)"<CR>
 "" *****************************************************************************
 "" vvv Transformations vvv
 
-" Rotated (r)
-vnoremap tr !~/.config/nvim/utils/rotate.py<CR>
-noremap <Leader>tr !!~/.config/nvim/utils/rotate.py<CR>
+" Smart Sorted (A)
+vnoremap tA !sort<CR>
+noremap <Leader>tA !!sort<CR>
 
 " Brute Sorted (a)
 vnoremap ta !LC_ALL=C sort<CR>
@@ -238,9 +238,9 @@ noremap <Leader>ta !!LC_ALL=C sort<CR>
 vnoremap tI !~/.config/nvim/utils/italic.py<CR>
 noremap <Leader>tI !!~/.config/nvim/utils/italic.py<CR>
 
-" Smart Sorted (A)
-vnoremap tA !sort<CR>
-noremap <Leader>tA !!sort<CR>
+" Rotated (r)
+vnoremap tr !~/.config/nvim/utils/rotate.py<CR>
+noremap <Leader>tr !!~/.config/nvim/utils/rotate.py<CR>
 
 " Studly Caps (S)
 vnoremap tS !~/.config/nvim/utils/studly.py<CR>
@@ -253,3 +253,8 @@ noremap <Leader>ts !!~/.config/nvim/utils/smallcaps.py<CR>
 " Underlined (u)
 vnoremap tu !~/.config/nvim/utils/under.py<CR>
 noremap <Leader>tu !!~/.config/nvim/utils/under.py<CR>
+
+" Monospace (=)
+vnoremap t= !~/.config/nvim/utils/mono.py<CR>
+noremap <Leader>t= !!~/.config/nvim/utils/mono.py<CR>
+

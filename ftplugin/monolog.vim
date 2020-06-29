@@ -38,3 +38,7 @@ noremap <localleader>s :%!~/.config/nvim/utils/smallcaps.py<CR>
 " Underlined
 noremap <localleader>u :%!~/.config/nvim/utils/under.py<CR>
   \ :call MonologOut()<CR>
+
+" Monospace
+noremap <localleader>= :%!~/.config/nvim/utils/mono.py<CR>
+  \ :call MonologOut()<CR>
