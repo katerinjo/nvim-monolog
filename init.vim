@@ -159,10 +159,12 @@ noremap j gj
 vmap < <gv
 vmap > >gv
 
-" use system clipboard (but not for 'x' deletions)
+" use system clipboard
 nnoremap y "+y
 nnoremap p "+p
 nnoremap d "+d
+nnoremap D "+D
+nnoremap x "+x
 vnoremap y "+y
 vnoremap p "+p
 vnoremap d "+d
