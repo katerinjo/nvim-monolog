@@ -176,6 +176,7 @@ digraphs !? 8253
 digraphs ~~ 8776
 digraphs ?! 11800
 digraphs Tg 9895
+digraphs @@ 9674
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
