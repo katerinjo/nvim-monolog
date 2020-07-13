@@ -4,7 +4,7 @@ let b:keymap_name = "It"
 
 loadkeymap
 
-A	ᴀ
+A	𝘈
 B	𝘉
 C	𝘊
 D	𝘋
