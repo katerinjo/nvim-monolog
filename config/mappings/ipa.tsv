@@ -1,0 +1,196 @@
+p	<char-0x0070>
+b	<char-0x0062>
+t	<char-0x0074>
+d	<char-0x0064>
+t`	<char-0x0288>
+d`	<char-0x0256>
+c	<char-0x0063>
+J\\	<char-0x025F>
+k	<char-0x006B>
+g	<char-0x0261>
+q	<char-0x0071>
+G\\	<char-0x0262>
+>\\	<char-0x02A1>
+?	<char-0x0294>
+m	<char-0x006D>
+F	<char-0x0271>
+n	<char-0x006E>
+n`	<char-0x0273>
+J	<char-0x0272>
+N	<char-0x014B>
+N\\	<char-0x0274>
+B\\	<char-0x0299>	bilabial trill
+r	<char-0x0072>
+R\\	<char-0x0280>
+4	<char-0x027E>
+r`	<char-0x027D>
+l\\	<char-0x027A>
+p\\	<char-0x0278>	voiceless bilabial fricative
+B	<char-0x03B2>	voiced bilabial fricative
+f	<char-0x0066>
+v	<char-0x0076>
+T	<char-0x03B8>
+D	<char-0x00F0>
+s	<char-0x0073>
+z	<char-0x007A>
+S	<char-0x0283>
+Z	<char-0x0292>
+s`	<char-0x0292>
+z`	<char-0x0290>
+x\\	<char-0x0267>
+K	<char-0x026C>	voiceless alveolar lateral fricative
+K\\	<char-0x026E>	voiced alveolar lateral fricative
+K`	<char-0xA78E>	voiceless retroflex lateral fricative
+s\\	<char-0x0255>
+z\\	<char-0x0291>
+C	<char-0x00E7>
+j\\	<char-0x029D>
+x	<char-0x0078>
+X	<char-0x03C7>
+R	<char-0x0281>
+G	<char-0x0263>
+X\\	<char-0x0127>
+?\\	<char-0x0295>
+H\\	<char-0x029C>
+<\\	<char-0x02A2>
+h	<char-0x0068>
+h\\	<char-0x0266>
+P	<char-0x028B>
+v\\	<char-0x028B>
+r\\	<char-0x0279>
+r\\`	<char-0x027B>
+r\\`_0	<char-0x027B><char-0x030A>
+H	<char-0x0265>
+H_0	<char-0x0265><char-0x030A>
+j	<char-0x006A>
+W	<char-0x028D>
+w	<char-0x0077>
+M\\	<char-0x0270>
+l	<char-0x006C>
+l`	<char-0x026D>
+L	<char-0x028E>
+L\\	<char-0x028F>
+5	<char-0x026B>
+i	<char-0x0069>
+y	<char-0x0079>
+1	<char-0x0268>
+i\\	<char-0x0268>
+u\\	<char-0x0289>
+M	<char-0x026F>
+u	<char-0x0075>
+I	<char-0x026A>
+Y	<char-0x028F>
+I\\	<char-0x026a><char-0x0308>
+U\\	<char-0x028a><char-0x0308>
+U	<char-0x028A>
+e	<char-0x0065>
+2	<char-0x00F8>
+@\\	<char-0x0258>
+8	<char-0x0275>
+7	<char-0x0264>
+o	<char-0x006F>
+@	<char-0x0259>
+E	<char-0x025B>
+9	<char-0x0153>
+3	<char-0x025C>
+3\\	<char-0x025E>
+V	<char-0x028C>
+O	<char-0x0254>
+{	<char-0x00E6>
+&	<char-0x00E6>
+6	<char-0x0250>
+a	<char-0x0061>
+&\\	<char-0x0276>
+A	<char-0x0251>
+Q	<char-0x0252>
+F_0	<char-0x0271><char-0x030A>
+n_d_0	<char-0x006E><char-0x032A><char-0x030A>
+n_0_d	<char-0x006E><char-0x032A><char-0x030A>
+n`_0	<char-0x0273><char-0x030A>
+N_0	<char-0x014B><char-030A>
+N=	<char-0x014B><char-030D>
+N_=	<char-0x014B><char-030D>
+p_t	<char-0x0070><char-02B1>
+b_t	<char-0x0062><char-02B1>
+t_t	<char-0x0074><char-02B1>
+d_t	<char-0x0064><char-02B1>
+t`_t	<char-0x0288><char-02B1>
+d`_t	<char-0x0256><char-02B1>
+c_t	<char-0x0063><char-02B1>
+J\\_t	<char-0x025F><char-02B1>
+k_t	<char-0x006B><char-02B1>
+g_t	<char-0x0261 ><char-02B1>
+q_t	<char-0x0071><char-02B1>
+G\\_t	<char-0x0262><char-02B1>
+>\\_t	<char-0x02A1><char-02B1>
+?_t	<char-0x0294><char-02B1>
+y_t	<char-0x0079><char-0308>
+I\\_t	<char-0x026A><char-0308><char-0324>
+U\\_t	<char-0x028A><char-0308><char-0324>
+_"	<char-0x0308>	centralized
+_+	<char-0x031F>	advanced
+_|+	<char-0x02D6>	advanced
+_-	<char-0x0320>	retracted
+_|-	<char-0x02D7>	retracted
+_0	<char-0x0325>
+_,0	<char-0x0325>
+_'0	<char-0x030A>
+_|0	<char-0x02F3>
+=	<char-0x0329>	syllabic
+_=	<char-0x0329>	syllabic
+_'=	<char-0x030D>	syllabic
+_,=	<char-0x0329>	syllabic
+_>	<char-0x0165>	ejective
+_?\\	<char-0x02E4>	pharyngealized
+_^	<char-0x032F>	non-syllabic
+_'^	<char-0x0311>	non-syllabic
+_,^	<char-0x032F>	non-syllabic
+_}	<char-0x031A>	no audible release
+`	<char-0x02DE>	rhotacization/retroflection
+_~	<char-0x0303>	nasalization
+~	<char-0x0303>	nasalization
+_a	<char-0x033A>	apical
+_B	<char-0x02E9>	extra low tone
+_c	<char-0x031C>	less rounded
+_d	<char-0x032A>	dental
+_e	<char-0x0334>	velarized or pharyngealized
+_G	<char-0x02E0>	velarized
+_H	<char-0x02E6>	high tone
+_h	<char-0x02B0>	aspirated
+_h\\	<char-0x02B1>	breathy voice h
+_j	<char-0x02B2>	palatalized
+;	<char-0x02B2>	palatalized
+_k	<char-0x0330>	creaky voice
+_L	<char-0x02E8>	low tone
+_l	<char-0x02E1>	lateral release
+_M	<char-0x02E7>	mid tone
+_m	<char-0x033B>	laminal
+_N	<char-0x033C>	linguolabial
+_n	<char-0x207F>	nasal release
+_O	<char-0x0339>	more rounded
+_o	<char-0x031E>	lowered
+_,o	<char-0x031E>	lowered diacritic
+_|o	<char-0x02d5>	lowered modifier letter
+_q	<char-0x0320>	retracted tongue root
+_,q	<char-0x0320>	retracted tongue root
+_|q	<char-0x02D7>	retracted tongue root
+_r	<char-0x031D>	raised
+_,r	<char-0x031D>	raised
+_|r	<char-0x02D4>	raised modifier letter
+_T	<char-0x02E5>	extra high tone
+_t	<char-0x0324>	breathy voice
+_'t	<char-0x0308>	breathy voice over-trema
+_,t	<char-0x0324>	breathy voice under-trema
+_v	<char-0x032C>	voiced
+_w	<char-0x02B7>	labialized
+_X	<char-0x0306>	short
+_x	<char-0x033D>	mid-centralized
+'	<char-0x02C8>	primary stress
+\"	<char-0x02C8>	primary stress
+,	<char-0x02CC>	secondary stress
+%	<char-0x02CC>	secondary stress
+:	<char-0x02D0>	long
+:\\	<char-0x02D1>	half long
+-		separator
+(	<char-0x0361>	tie high
+)	<char-0x035C>	tie low
