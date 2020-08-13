@@ -1,6 +1,8 @@
 {
   "leader": {
-    "i": "input",
+    "i": {
+      "i": ["keymap", "ipa"]
+    },
     "t": "transform"
   },
   "localleader": {}

@@ -1,6 +1,6 @@
 scriptencoding utf-8
 
-let b:keymap_name = "It"
+let b:keymap_name = "ital"
 
 loadkeymap
 

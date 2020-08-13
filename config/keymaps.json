@@ -1,4 +1,24 @@
 {
-  "i": "ipa",
-  "n": "normal"
+  "esperanto": {
+    "short name": "eo"
+  },
+  "ipa": {
+    "short name": "ipa"
+  },
+  "italic": {
+    "short name": "ital",
+    "scriptencoding": "utf-8"
+  },
+  "pinyin": {
+    "short name": "pnyn",
+    "scriptencoding": "utf-8"
+  },
+  "smallcaps": {
+    "short name": "sm",
+    "scriptencoding": "utf-8"
+  },
+  "super": {
+    "short name": "sup",
+    "scriptencoding": "utf-8"
+  }
 }
