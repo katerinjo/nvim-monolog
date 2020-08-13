@@ -7,11 +7,6 @@ set wrap
 set linebreak
 set background=dark
 
-"" Cursor
-" highlight Cursor guifg=NONE guibg=#00E000
-" set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-"  \,a:Cursor/lCursor
-
 "" Keyboard Shortcuts
 let mapleader=' '
 let maplocalleader='\'
@@ -58,27 +53,6 @@ set number
 "" vvv PlugIns vvv
 call plug#begin(expand('~/.config/nvim/plugged'))
 
-"" General
-
-"" Presentation
-
-Plug 'vim-airline/vim-airline'
-
-" color schemes
-Plug 'nanotech/jellybeans.vim'
-
-"" Function
-
-Plug 'w0rp/ale' " linting engine
-Plug 'tpope/vim-commentary' " gcc for commenting out lines
-
-" snippets
-
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'sirver/UltiSnips'
-
-"" Clojure
-Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile' }
 
 call plug#end()
 
@@ -86,20 +60,7 @@ call plug#end()
 "" *****************************************************************************
 "" vvv PlugIn-Dependent Settings vvv
 
-"" Ale
-let g:ale_linters = {
-    \ 'clojure': ['clj-kondo', 'joker']
-    \}
 
-"" Clojure
-let g:conjure_log_direction = "horizontal"
-
-"" Misc
-
-silent! colorscheme jellybeans
-
-" status bar always
-set laststatus=2
 
 "" ^^^ PlugIn-Dependent Settings ^^^
 "" *****************************************************************************
@@ -175,8 +136,6 @@ inoremap <S-Tab> <C-k>HT
 digraphs !? 8253
 digraphs ~~ 8776
 digraphs ?! 11800
-digraphs Tg 9895
-digraphs @@ 9674
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
