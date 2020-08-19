@@ -6,8 +6,9 @@ from pathlib import Path
 from pprint import pprint
 
 this_file = Path(os.path.realpath(__file__))
-project_dir = this_file.parent.parent
-config_dir = project_dir / 'config'
+admin_dir = this_file.parent
+project_dir = admin_dir.parent
+config_dir = admin_dir / 'config'
 keymap_dir = project_dir / 'keymap'
 
 # Keymaps
@@ -20,8 +21,6 @@ for tsv in (config_dir / 'mappings').iterdir():
     with tsv.open() as f:
         pairs = [row.split('\t')[:2] for row in f.read().split('\n') if row]
         mappings[tsv.stem] = sorted(pairs)
-
-# pprint(mappings)
 
 ### Build Keymap Files
 
