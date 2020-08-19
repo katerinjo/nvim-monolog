@@ -1,9 +1,10 @@
 {
-  "leader": {
+  "<Leader>": {
     "i": {
-      "i": ["keymap", "ipa"]
+      "i": ["keymap", "ipa"],
+      "n": ["keymap", "normal", ""]
     },
     "t": "transform"
   },
-  "localleader": {}
+  "<Localleader>": {}
 }

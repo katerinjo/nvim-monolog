@@ -11,9 +11,10 @@ project_dir = admin_dir.parent
 config_dir = admin_dir / 'config'
 keymap_dir = project_dir / 'keymap'
 
-# Keymaps
 
-## Load Mappings
+# Load
+
+## Mappings
 
 mappings = {}
 
@@ -22,9 +23,17 @@ for tsv in (config_dir / 'mappings').iterdir():
         pairs = [row.split('\t')[:2] for row in f.read().split('\n') if row]
         mappings[tsv.stem] = sorted(pairs)
 
-### Build Keymap Files
+## Keymaps
 
 keymaps = json.load((config_dir / 'keymaps.json').open())
+
+## Command Tree
+
+cmd_tree = json.load((config_dir / 'cmdtree.json').open())
+
+# Build
+
+## Keymap Files
 
 for name, props in keymaps.items():
     builder = []
@@ -37,4 +46,48 @@ for name, props in keymaps.items():
     with (keymap_dir / (name + '.vim')).open(mode='w') as f:
         f.write(keymap_txt)
 
-# Command Tree
+## Command Tree
+
+keymap_snippets = []
+
+def mk_vim_keymap(prefix, map_name, keymap_val=None):
+    if keymap_val is None:
+        keymap_val = map_name
+    keymap_snippets.append(f'''
+" {map_name}
+nnoremap {prefix} :set keymap={keymap_val}<CR>
+''')
+
+def add_node(chain, node):
+    for link, child in node.items():
+        if type(child) is dict: # no command yet, go deeper
+            add_node([*chain, link], child)
+        else: # reached command
+            if child[0] == 'keymap':
+                mk_vim_keymap(''.join(chain) + link, *child[1:])
+
+add_node([], cmd_tree)
+
+keymap_vim = ''.join(keymap_snippets)
+
+def mk_vim_sections(pairs):
+    builder = ['"" ' + ('-' * 77)]
+    for pair in pairs:
+        name, content = pair
+        builder.extend([
+            f'"" {" " * (36 - (len(name) // 2))} {name}',
+            content,
+            f'"" {" " * (36 - (len(name) // 2))} {name}',
+            '"" ' + ('-' * 77)
+            ])
+    return '\n'.join(builder)
+
+
+cmd_tree_vim = mk_vim_sections([
+        ['Keymaps', keymap_vim],
+        ['Transformations', '\n" nothing yet\n'],
+        ['Misc Commands', '\n" nothing yet\n']
+        ])
+
+with (project_dir / 'cmdtree.vim').open(mode='w') as f:
+    f.write(cmd_tree_vim)
