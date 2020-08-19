@@ -151,38 +151,7 @@ noremap <C-l> <C-w>l
 "" *****************************************************************************
 "" vvv Keymaps vvv
 
-" Normal (n : nor)
-nnoremap <Leader>in :set keymap=<CR>
-nnoremap <Leader>Inor :set keymap=<CR>:echo "Normal (n)"<CR>
-
-" Esperanto (e : esp)
-nnoremap <Leader>ie :set keymap=Esperanto<CR>
-nnoremap <Leader>Iesp :set keymap=Esperanto <CR>:echo "Esperanto (e)"<CR>
-
-" IPA (i : ipa)
-nnoremap <Leader>ii :set keymap=IPA<CR>
-nnoremap <Leader>Iipa :set keymap=IPA<CR>:echo "IPA (i)"<CR>
-
-" Italic (I)
-nnoremap <Leader>iI :set keymap=Italic<CR>
-
-" Kana (k : kan)
-nnoremap <Leader>ik :set keymap=kana<CR>
-nnoremap <Leader>Ikan :set keymap=kana<CR>:echo "Kana (k)"<CR>
-
-" Pinyin (y : pin)
-nnoremap <Leader>iy :set keymap=Pinyin<CR>
-nnoremap <Leader>Ipin :set keymap=Pinyin<CR>:echo "Pinyin (y)"<CR>
-
-" SmallCaps (s : cap sma)
-nnoremap <Leader>is :set keymap=SmallCaps<CR>
-nnoremap <Leader>Icap :set keymap=SmallCaps<CR>:echo "SmallCaps (s)"<CR>
-nnoremap <Leader>Isma :set keymap=SmallCaps<CR>:echo "SmallCaps (s)"<CR>
-nnoremap <Leader>Iupp :set keymap=SmallCaps<CR>:echo "SmallCaps (s)"<CR>
-
-" Super (p : sup)
-nnoremap <Leader>ip :set keymap=Super<CR>
-nnoremap <Leader>Isup :set keymap=Super<CR>:echo "Super (i)"<CR>
+so cmdtree.vim
 
 "" ^^^ Keymaps ^^^
 "" *****************************************************************************

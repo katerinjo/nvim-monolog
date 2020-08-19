@@ -1,8 +1,14 @@
 {
   "<Leader>": {
     "i": {
-      "i": ["keymap", "ipa"],
-      "n": ["keymap", "normal", ""]
+      "n": ["keymap", "Normal", ""],
+      "e": ["keymap", "Esperanto"],
+      "i": ["keymap", "IPA"],
+      "I": ["keymap", "Italic"],
+      "k": ["keymap", "Kana"],
+      "y": ["keymap", "Pinyin"],
+      "s": ["keymap", "Smallcaps"],
+      "p": ["keymap", "Super"]
     },
     "t": "transform"
   },
