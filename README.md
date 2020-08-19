@@ -1,6 +1,6 @@
 # Monolog: A Neovim config for smart Unicode text insertion anywhere
 
-This setup adapts the main idea behind [Texpander](https://github.com/leehblue/texpander) for Neovim, allowing the insertion of special characters and use of Vim shortcuts basically anywhere. Feel free to copy as much or as little of the code and philosophy as you please for your own configuration.
+This setup adapts the main idea behind [Texpander](https://github.com/leehblue/texpander) for Neovim, allowing the insertion of special characters and use of Vim shortcuts basically anywhere. Once my main configuration, I've adapted this into a starter config to cut out the fuss of keeping sensitive information and system-specific expectations out of the repo.
 
 # Setup
 
@@ -59,7 +59,7 @@ Simple and robust keyboard middleware has always been something I've wanted, but
 
 Trying to combine keyboard configurations, input methods, emoji insertion GUIs, text editors, and so on all together as a coherent whole results in tools stepping on each other's toes, brittle functionality, and a user experience with a lot of mental overhead. Not good.
 
-I want easy automatic studly caps, void text, and upside-down text. I want to insert today's date or a new UUID every now and then. I want to do a substring search on both emoticon and emoji names at the same time. I want to be able to switch between typing pinyin, Japanese kana, and Esperanto diacritics on the same machine without breaking everything. I want to talk about phonetics with my friends without making them all learn X-SAMPA.
+I want easy automatic studly caps, Zalgo text, and upside-down text. I want to insert today's date or a new UUID every now and then. I want to do a substring search on both emoticon and emoji names at the same time. I want to be able to switch between typing pinyin, Japanese kana, and Esperanto diacritics on the same machine without breaking everything. I want to talk about phonetics with my friends without making them all learn X-SAMPA.
 
 Assuming the text will go where I want it to, each of these features is pretty darn easy to implement in Python. The real bottleneck is compatibility between different applications and tools.
 
@@ -78,7 +78,7 @@ The original idea was a standalone application, not a configuration, but this is
 
 # TODO
 
+- Spin off text transformations into a separate Python library.
 - emoticons and emojis
-- void text
-- fancy text
+- Zalgo text
 
