@@ -28,8 +28,7 @@ When you find yourself wanting to insert something fancy or complicated, just us
 
 ## Visual Mode
 
-- `<Space>` (Leader)
-  - `t` : TRANSFORM (current selection)
+- `t` : TRANSFORM (current selection)
 
 ## SWITCH INPUT
 
