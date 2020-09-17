@@ -23,7 +23,6 @@ When you find yourself wanting to insert something fancy or complicated, just us
 - `<Space>` (Leader)
   - `s` : save
   - `i` : SWITCH INPUT
-  - `I` : SWITCH INPUT (verbose)
   - `t` : TRANSFORM (current line)
 - `\` : TRANSFORM (all and save) (monolog only)
 
@@ -33,16 +32,16 @@ When you find yourself wanting to insert something fancy or complicated, just us
 
 ## SWITCH INPUT
 
-| Keymap                          | Key | Verbose Alternative |
-|---------------------------------|-----|---------------------|
-| normal/default                  | `n` | `nor`               |
-| Esperanto                       | `e` | `esp`               |
-| International Phonetic Alphabet | `i` | `ipa`               |
-| Italic                          | `I` |                     |
-| Kana (Japanese)                 | `k` | `kan`               |
-| Pinyin (Mandarin)               | `y` | `pin`               |
-| (pseudo-) small caps            | `s` | `cap`, `sma`, `upp` |
-| (pseudo-) superscript           | `p` | `sup`               |
+| Keymap                          | Key |
+|---------------------------------|-----|
+| normal/default                  | `n` |
+| Esperanto                       | `e` |
+| International Phonetic Alphabet | `i` |
+| Italic                          | `I` |
+| Kana (Japanese)                 | `k` |
+| Pinyin (Mandarin)               | `y` |
+| (pseudo-) small caps            | `s` |
+| (pseudo-) superscript           | `p` |
 
 ## TRANSFORM
 
