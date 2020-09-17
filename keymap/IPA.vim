@@ -9,7 +9,6 @@ loadkeymap
 (	<char-0x0361>
 )	<char-0x035C>
 ,	<char-0x02CC>
--	
 1	<char-0x0268>
 2	<char-0x00F8>
 3	<char-0x025C>

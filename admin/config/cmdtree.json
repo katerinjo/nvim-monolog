@@ -1,16 +1,26 @@
 {
-  "<Leader>": {
-    "i": {
-      "n": ["keymap", "Normal", ""],
-      "e": ["keymap", "Esperanto"],
-      "i": ["keymap", "IPA"],
-      "I": ["keymap", "Italic"],
-      "k": ["keymap", "Kana"],
-      "y": ["keymap", "Pinyin"],
-      "s": ["keymap", "Smallcaps"],
-      "p": ["keymap", "Super"]
-    },
-    "t": "transform"
+  "normal": {
+    "<Leader>": {
+      "i": {
+        "I": ["keymap", "Italic"],
+        "e": ["keymap", "Esperanto"],
+        "i": ["keymap", "IPA"],
+        "k": ["keymap", "Kana"],
+        "n": ["keymap", "Normal", ""],
+        "p": ["keymap", "Super"],
+        "s": ["keymap", "Smallcaps"],
+        "y": ["keymap", "Pinyin"]
+      }
+    }
   },
-  "<Localleader>": {}
+  "visual": {
+    "t": {
+      "=": ["transform", "mono.py"],
+      "I": ["transform", "italic.py"],
+      "S": ["transform", "studly.py"],
+      "r": ["transform", "rotate.py"],
+      "s": ["transform", "smallcaps.py"],
+      "u": ["transform", "under.py"]
+    }
+  }
 }

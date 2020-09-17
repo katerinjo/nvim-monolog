@@ -28,7 +28,8 @@ When you find yourself wanting to insert something fancy or complicated, just us
 
 ## Visual Mode
 
-- `t` : TRANSFORM (current selection)
+- `<Space>` (Leader)
+  - `t` : TRANSFORM (current selection)
 
 ## SWITCH INPUT
 
@@ -40,17 +41,19 @@ When you find yourself wanting to insert something fancy or complicated, just us
 | Italic                          | `I` |
 | Kana (Japanese)                 | `k` |
 | Pinyin (Mandarin)               | `y` |
-| (pseudo-) small caps            | `s` |
-| (pseudo-) superscript           | `p` |
+| small caps                      | `s` |
+| superscript                     | `p` |
 
 ## TRANSFORM
 
 - `a` : sort (simple)
 - `A` : sort (smart)
+- `=` : monospace
 - `I` : italics
-- `r` : rotate upside-down
 - `S` : studly caps
+- `r` : rotate upside-down
 - `s` : small caps
+- `u` : underlined
 
 # Background
 

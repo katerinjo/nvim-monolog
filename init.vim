@@ -149,12 +149,6 @@ noremap <C-l> <C-w>l
 
 "" ^^^ Key Bindings ^^^
 "" *****************************************************************************
-"" vvv Keymaps vvv
-
-runtime cmdtree.vim
-
-"" ^^^ Keymaps ^^^
-"" *****************************************************************************
 "" vvv Transformations vvv
 
 " Smart Sorted (A)
@@ -165,27 +159,8 @@ noremap <Leader>tA !!sort<CR>
 vnoremap ta !LC_ALL=C sort<CR>
 noremap <Leader>ta !!LC_ALL=C sort<CR>
 
-" Italic (I)
-vnoremap tI !~/.config/nvim/utils/italic.py<CR>
-noremap <Leader>tI !!~/.config/nvim/utils/italic.py<CR>
+"" ^^^ Transformations ^^^
+"" *****************************************************************************
+"" vvv Generated Commands vvv
 
-" Rotated (r)
-vnoremap tr !~/.config/nvim/utils/rotate.py<CR>
-noremap <Leader>tr !!~/.config/nvim/utils/rotate.py<CR>
-
-" Studly Caps (S)
-vnoremap tS !~/.config/nvim/utils/studly.py<CR>
-noremap <Leader>tS !!~/.config/nvim/utils/studly.py<CR>
-
-" SmallCaps (s)
-vnoremap ts !~/.config/nvim/utils/smallcaps.py<CR>
-noremap <Leader>ts !!~/.config/nvim/utils/smallcaps.py<CR>
-
-" Underlined (u)
-vnoremap tu !~/.config/nvim/utils/under.py<CR>
-noremap <Leader>tu !!~/.config/nvim/utils/under.py<CR>
-
-" Monospace (=)
-vnoremap t= !~/.config/nvim/utils/mono.py<CR>
-noremap <Leader>t= !!~/.config/nvim/utils/mono.py<CR>
-
+runtime cmdtree.vim

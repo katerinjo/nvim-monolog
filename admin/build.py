@@ -49,26 +49,46 @@ for name, props in keymaps.items():
 ## Command Tree
 
 keymap_snippets = []
+transform_snippets = []
 
-def mk_vim_keymap(prefix, map_name, keymap_val=None):
+def mk_vim_keymap(prefix, map_name, keymap_val=None, mode='n'):
     if keymap_val is None:
         keymap_val = map_name
     keymap_snippets.append(f'''
 " {map_name}
-nnoremap {prefix} :set keymap={keymap_val}<CR>
+{mode}noremap {prefix} :set keymap={keymap_val}<CR>
 ''')
 
-def add_node(chain, node):
+def mk_vim_transform(prefix, script_name, transformation_name=None, mode='n'):
+    if transformation_name is None:
+        transformation_name = ''.join(script_name.split('.')[:-1])
+    transform_snippets.append(f'\n" {transformation_name}\n')
+    if mode == 'n':
+        transform_snippets.append(
+            f'nnoremap {prefix} !!~/.config/nvim/utils/{script_name}<CR>\n'
+            )
+    elif mode == 'v':
+        transform_snippets.append(
+            f'vnoremap {prefix} !~/.config/nvim/utils/{script_name}<CR>\n'
+            )
+
+def add_node(chain, node, mode):
     for link, child in node.items():
         if type(child) is dict: # no command yet, go deeper
-            add_node([*chain, link], child)
+            add_node([*chain, link], child, mode)
         else: # reached command
-            if child[0] == 'keymap':
-                mk_vim_keymap(''.join(chain) + link, *child[1:])
+            prefix = ''.join(chain) + link
+            cmd_type, *args = child
+            if cmd_type == 'keymap':
+                mk_vim_keymap(prefix, *args, mode=mode)
+            if cmd_type == 'transform':
+                mk_vim_transform(prefix, *args, mode=mode)
 
-add_node([], cmd_tree)
+add_node([], cmd_tree['normal'], mode='n')
+add_node([], cmd_tree['visual'], mode='v')
 
 keymap_vim = ''.join(keymap_snippets)
+transform_vim = ''.join(transform_snippets)
 
 def mk_vim_sections(pairs):
     builder = ['"" ' + ('-' * 77)]
@@ -85,7 +105,7 @@ def mk_vim_sections(pairs):
 
 cmd_tree_vim = mk_vim_sections([
         ['Keymaps', keymap_vim],
-        ['Transformations', '\n" nothing yet\n'],
+        ['Transformations', transform_vim],
         ['Misc Commands', '\n" nothing yet\n']
         ])
 
