@@ -121,14 +121,7 @@ vmap < <gv
 vmap > >gv
 
 " use system clipboard
-nnoremap y "+y
-nnoremap p "+p
-nnoremap d "+d
-nnoremap D "+D
-nnoremap x "+x
-vnoremap y "+y
-vnoremap p "+p
-vnoremap d "+d
+set clipboard=unnamedplus
 
 "" Characters
 
